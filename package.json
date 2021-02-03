@@ -1,0 +1,47 @@
+{
+  "name": "deebot",
+  "version": "1.4.3",
+  "author": "Scot Sexton",
+  "description": "Publish your deebot ecovacs as an homekit accessory",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js && echo \"No syntax errors! (node $(node -v))\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "homebridge": ">=0.4.50",
+    "node": ">=10.20.0"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "deebot",
+    "sucks",
+    "ecovacs",
+    "vacuum",
+    "homekit"
+  ],
+  "dependencies": {
+    "ecovacs-deebot": "^0.5.5",
+    "node-machine-id": "^1.1.12"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "prettier": "2.0.0",
+    "pretty-quick": "^2.0.2"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 100
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
